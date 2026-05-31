@@ -37,5 +37,8 @@
   "strapi": {
     "uuid": "0f698d79-617a-4d16-a750-a101de59b664",
     "installId": "a654f3be8bb5e5c5b098ae473e397fc699da41e8d57b076a321b42e4eb9c910f"
+  },
+  "optionalDependencies": {
+    "@swc/core-linux-x64-gnu": "^1.15.40"
   }
 }
