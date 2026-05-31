@@ -1,18 +1,19 @@
 # Dockerfile
-FROM node:20-alpine
+
+# ← debian بدل alpine — يدعم gnu binaries
+FROM node:20-slim
 
 WORKDIR /app
 
-# ← ننسخ ملفات الـ package أولاً
 COPY package*.json ./
 
-# ← نثبت كل شيء بما فيها الـ optional
-RUN npm install --include=optional
+# ← نثبت الـ GNU bindings صراحةً قبل أي شيء
+RUN npm install --include=optional && \
+    npm install @swc/core-linux-x64-gnu --save-optional && \
+    npm install @rollup/rollup-linux-x64-gnu --save-optional
 
-# ← ننسخ باقي الملفات
 COPY . .
 
-# ← نبني الـ admin panel
 RUN npm run build
 
 EXPOSE 1337
