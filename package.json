@@ -24,6 +24,10 @@
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "*",
+    "@swc/core-linux-x64-gnu": "*"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
