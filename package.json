@@ -19,14 +19,14 @@
     "@strapi/plugin-users-permissions": "5.46.1",
     "@strapi/strapi": "5.46.1",
     "better-sqlite3": "12.8.0",
+    "pg": "^8.21.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "*",
-    "@swc/core-linux-x64-gnu": "*"
+    "@swc/core-linux-x64-gnu": "^1.15.40"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -41,8 +41,5 @@
   "strapi": {
     "uuid": "0f698d79-617a-4d16-a750-a101de59b664",
     "installId": "a654f3be8bb5e5c5b098ae473e397fc699da41e8d57b076a321b42e4eb9c910f"
-  },
-  "optionalDependencies": {
-    "@swc/core-linux-x64-gnu": "^1.15.40"
   }
 }
